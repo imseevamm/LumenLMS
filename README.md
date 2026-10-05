@@ -8,7 +8,7 @@ A full-stack desktop Learning Management System built with **JavaFX**, **JDBC**,
 
 ### Authentication
 
-- Animated split-panel login screen with show/hide password, "Remember Me" securely stores the email, password, and role using encrypted local storage, and a secure administrator-assisted password reset flow
+- Animated split-panel login screen with show/hide password, "Remember Me" securely stores the email, password, and role using encrypted local storage, and a secure administrator-assisted password reset flow 
 - Sign-up flow restricted to **Student** and **Instructor** roles (Admin accounts cannot self-register)
 - Live password-strength meter, duplicate-email detection, and full input validation
 - Passwords hashed with **BCrypt** (adaptive, salted) — never stored or compared in plain text
