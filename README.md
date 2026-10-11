@@ -103,7 +103,8 @@ com.lms
    ```
    mysql -u root -p < database/lms.sql
    ```
-   This creates the `lms_db` database, all 15 tables (with primary/foreign keys, unique constraints, and indexes), and inserts demo accounts, courses, lessons, a quiz, an assignment, and notifications.
+   On Windows PowerShell the `<` redirect is not supported, so use: `cmd /c "mysql -u root -p < database\lms.sql"` (or run the file in MySQL Workbench).
+   This creates the `lms_db` database, all 16 tables (with primary/foreign keys, unique constraints, and indexes), and inserts demo accounts, courses, lessons, a quiz, an assignment, and notifications.
 3. Configure your MySQL credentials **without editing source files**. Copy `db.local.properties.example` to `db.local.properties` (git-ignored) in the project folder and set your values:
    ```
    db.url=jdbc:mysql://localhost:3306/lms_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
