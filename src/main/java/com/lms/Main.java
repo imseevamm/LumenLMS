@@ -24,7 +24,7 @@ public class Main extends Application {
             alert.setTitle("Database Connection Failed");
             alert.setHeaderText("Could not connect to MySQL.");
             alert.setContentText("Please verify that MySQL is running and that " +
-                    "src/main/resources/db.properties has the correct URL, username, and password. " +
+                    "db.local.properties (copy it from db.local.properties.example) has the correct URL, username, and password. " +
                     "Also make sure you have imported database/lms.sql.");
             alert.getButtonTypes().setAll(ButtonType.OK);
             alert.showAndWait();
